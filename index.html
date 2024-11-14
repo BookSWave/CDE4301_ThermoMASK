@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThermoMask Research Website</title>
+    <title>CDE4301 VR-403 ThermoMask</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>ThermoMask Research</h1>
+        <h1>VR-403 ThermoMask</h1>
         <nav>
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#current-vr-experience">Current VR Experience</a></li>
                 <li><a href="#related-works">Related Works</a></li>
                 <li><a href="#research-methodologies">Research Methodologies</a></li>
                 <li><a href="#limitations">Limitations</a></li>
@@ -24,71 +23,224 @@
 
     <section id="introduction">
         <h2>Introduction</h2>
-        <p>Virtual reality (VR) is a game-changing creation that takes full advantage of technological advancements in recent years to improve immersion in content consumption, providing amazing visual and audio experiences.</p>
-    </section>
-
-    <section id="current-vr-experience">
-        <h2>Current VR Experience</h2>
-        <p>VR is used not only in gaming but also in medical training and tourism, allowing users to experience realistic environments without leaving their room. Popular VR headsets like the Meta Quest 3 and Apple Vision Pro offer high-resolution displays and spatial audio for enhanced visual and auditory experiences.</p>
+        <p>Virtual reality (VR) is a game-changing creation which takes the full advantage of technological advancement in the recent years to improve the immersion in our content consumption, providing amazing visual and audio experiences. </p>
+        <h3>Current VR Experience</h3>
+        <p>For example, VR can be used not only in gaming, but also in medical training for nurses to take care of patients, or heritage and tourism for users to experience the beauty of the world without leaving their room, VR provides us realistic experiences during these activities.</p>
+        <p>On the current market, the popular VR headsets offers decent displays and speakers, for example, the Meta Quest 3 has Dual LCD display with a resolution of 2064 x 2208 pixels that offers a refresh rate of up to 120Hz, the Apple Vision Pro has a 3660×3200 Micro-OLED display of up to 100Hz refresh rate, both with integrated spatial audio (Heaney, 2024). Users can enjoy contents on the beautiful display and be indulged in the realistic sounds. </p>
         <figure>
-            <img src="meta-quest-3.jpg" alt="Meta Quest 3">
-            <figcaption>Figure 1: VR headsets currently on the market, Meta Quest 3 (left) and Apple Vision Pro (right).</figcaption>
+            <img src="assets\Meta Quest 3.png" alt="Meta Quest 3">
+            <img src="assets\VisionPro.png" alt="VisionPro">
+            <figcaption>Figure 1 VR headsets currently on the market, Meta Quest 3 (left) and Apple Vision Pro (right).</figcaption>
         </figure>
-        <p>Despite the great visual and audio experience offered by the VR headsets currently on the market, the overall VR experience is yet to be regarded as a perfect one. Touch is a significant sense for humans, and its inclusion is essential to create a fully immersive virtual reality experience. The lack of haptic feedback in current VR content consumption leaves a noticeable gap in achieving true realism. This gap is particularly evident in the way we perceive changes in texture and temperature, which are critical components of our tactile experience.</p>
+        <p>Despite the great visual and audio experience offered by the VR headsets currently on the market, the overall VR experience is yet to be regarded as a perfect one. Touch is a significant sense for humans, and its inclusion is essential to create a fully immersive virtual reality experience. The lack of haptic feedback in current VR content consumption leaves a noticeable gap in achieving true realism. This gap is particularly evident in the way we perceive changes in texture and temperature, which are critical components of our tactile experience. Despite the great visual and audio experience offered by the VR headsets currently on the market, the overall VR experience is yet to be regarded as a perfect one. Touch is a significant sense for humans, and its inclusion is essential to create a fully immersive virtual reality experience. The lack of haptic feedback in current VR content consumption leaves a noticeable gap in achieving true realism. This gap is particularly evident in the way we perceive changes in texture and temperature, which are critical components of our tactile experience. </p>
+        <p>Recognising the importance of haptic feedback in VR, we aim to provide a realistic sensation of objects within virtual environments. Haptic feedback encompasses various touch sensations, including thermal and textural stimuli.</p>
+        <figure>
+            <img src="assets\ChangesSensed.png" alt="ChangesSensed">
+            <figcaption>Figure 2 Changes sensible by human for haptic feedbacks (Huang et al., 2023)</figcaption>
+        </figure>
+        <p>Haptic interface in VR is an attractive topic for immersive and embodied experience. Currently, there are various types of haptic devices have been developed for haptic interaction, such as vibrotactile feedback (Shaoyu et al., 2024; Shuhei et al., 2014; Galambos, 2012), force feedback (Mourad et al., 2002; Inrak et al., 2017) and thermal feedback (Peiris et al., 2017; Cai et al., 2020; Kening et al., 2019). Such devices support users to experience the feeling of physical sensations of virtual environments, which significantly improve the immersion and the realness in VR (Eric et al., 2018). Among these different types of haptic feedback, thermal feedback is one of the important characteristics when users interact with physical objects or different environments. Recently, there has been more research work focusing on delivering thermal sensations to other body parts, such as arms (Lalitha et al., 2019; Liu et al., 2021), neck (Nimesha et al., 2018), feet (Bettina et al., 2023), body (Abdallah et al., 2020) and 	faces (Peiris et al., 2017). For thermal sensation, the ThermalAirGlove for example, is a glove equipped with five inflatable airbags positioned on the fingers and palm. The airbags provide thermal sensations through air temperature control, this enhances realism by simulating the temperature of virtual materials. The study concludes that thermal feedback can play a crucial role in increasing immersion (Cai et al., 2020). While a significant amount of research efforts has been dedicated to the development of thermal feedback systems, providing localised and large-scale thermal sensations remains challenging. </p>
+        <figure>
+            <img src="assets\ThermalAirGlove.png" alt="ThermalAirGlove">
+            <figcaption>Figure 3 ThermalAirGlove (Cai et al., 2020)</figcaption>
+        </figure>
     </section>
 
     <section id="related-works">
         <h2>Related Works</h2>
         <h3>Thermal Feedback in VR Using Thermoelectric Coolers</h3>
-        <p>Currently, the general method to provide thermal sensation is using thermoelectric coolers (TECs). Roshan Lalintha Peiris has done research exploring thermal haptic feedback on head mounted displays, integrating 10 TEC modules on the head mounted device, to enhance VR immersion through spatial and immersive thermal sensations on the face. Their system utilised TEC modules to provide both hot and cold feedback to specific locations on the face, enabling directional cueing. This research led to a conclusion that users found the system to be thermally immersive when all modules were activated with hot and cold stimulations (Peiris et al., 2017).</p>
+        <p>Currently, the general method to provide thermal sensation is using thermoelectric coolers (TECs). Roshan Lalintha Peiris has done research exploring thermal haptic feedback on head mounted displays, integrating 10 TEC modules on the head mounted device, to enhance VR immersion through spatial and immersive thermal sensations on the face. Their system utilised TEC modules to provide both hot and cold feedback to specific locations on the face, enabling directional cueing. This research led to a conclusion that users found the system to be thermally immersive when all modules were activated with hot and cold stimulations (Peiris et al., 2017). </p>
         <figure>
-            <img src="thermovr.jpg" alt="ThermoVR">
-            <figcaption>Figure 4: ThermoVR prototype with TEC modules (Peiris et al., 2017).</figcaption>
+            <img src="assets\ThermoVR.jpg" alt="ThermoVR">
+            <figcaption>Figure 4 ThermoVR (Peiris et al., 2017)</figcaption>
         </figure>
+        <h3>Thermal Feedback Across the Body</h3>
+        <p>Upper Body Thermal Referral and Tactile Masking (Son et al., 2023) explored thermal feedback on the back using a combination of thermal and vibrotactile actuators. The authors showed that this setup can effectively provide localised thermal sensations, indicating that thermal illusions could extend the sense of temperature across larger areas. Additionally, their findings showed that a cross-modal approach using tactile masking and fewer thermal actuators could still achieve high location accuracy and response time, which is essential for large-scale VR systems. </p>
+        <figure>
+            <img src="assets\Thermal Vest.png" alt="Thermal Vest">
+            <figcaption>Figure 5 Vest with vibrotactile actuators thermal actuators (Son et al., 2023)</figcaption>
+        </figure>
+        <p>This is possible is possible because thermal referral is applied to the human back in this setup. </p>
         <h3>Thermal Referral</h3>
-        <p>Thermal referral (TR) is a phenomenon where the sensation of temperature is felt not only at the site of the thermal stimulus but also at nearby locations, especially with concurrent tactile stimuli. TR is primarily attributed to the interaction of thermal and tactile inputs, where spatial integration in the brain leads to an illusory sensation of temperature at points with only tactile contact. This concept has been studied on human arms and backs, showing potential to enhance VR experiences through perceived thermal sensations.</p>
+        <p>Thermal Referral (TR) refers to the phenomenon where the sensation of temperature is felt not only at the site of the thermal stimulus but also at other nearby locations, especially when tactile stimuli are concurrently applied. TR is primarily attributed to the interaction of thermal and tactile inputs, where spatial integration <a href="#footnote-1">[1]</a> in the brain leads to an illusory sensation of temperature at points with only tactile contact.</p>
+        <p id="footnote-1">[1] Stimulus close together are more likely to be integrated (Tong et al., 2020)</p>
         <figure>
-            <img src="thermal-referral.jpg" alt="Thermal Referral">
-            <figcaption>Figure 6: Thermal referral on the back (Son et al., 2023).</figcaption>
+            <img src="assets\ThermalReferral.png" alt="Thermal Referral">
+            <figcaption>Figure 6 Thermal referral on the back (Son et al., 2023)</figcaption>
         </figure>
+        <h4>Thermal Referral on Human Arms</h4>
+        <p>Other researchers, like Liu with the prototype ThermoCaress (Liu et al., 2021), studied TR on human arms. The thermal system uses water pouches that can change temperature, combined with the overlapping pressure stimulation to create a sensation of moving heat. This approach changes the pressure stimulation's location, making users feel as though the thermal stimulus is moving. </p>
+        <figure>
+            <img src="assets\ThermoCaress.png" alt="ThermoCaress">
+            <figcaption>Figure 7 ThermoCaress (Liu et al., 2021)</figcaption>
+        </figure>
+        <p>Recent research by Haokun Wang mentioned that thermal masking is a type of thermal referral, where a tactile stimulus combined with a thermal stimulus, results in an illusory thermal sensation at the tactile site, masking the original thermal sensation (Wang et al., 2024). </p>
+        <h3>Limitations of Thermal Feedback Solutions</h3>
+        <p>On the other hand, thermal devices and components are more expensive compared to typical vibrotactile actuators, such as linear resonant actuators (LRAs) and eccentric rotating mass (ERM). They also require high-power consumption (Son et al., 2023). This limitation poses significant challenges in the design of VR devices that incorporate large scale thermal feedback. It means that it will be difficult to utilise them widely in commercial VR headsets for haptic feedback. </p>
+        <h3>Research Gaps</h3>
+        <p>Current studies, such as ThermoVR and Upper Body Thermal Referral, highlighted several gaps. </p>
+        <p>The ThermoVR prototype, utilised solely TECs on Head Mount Devices, indeed improved immersion, but using large number of TECs is high in cost and energy consumption thus unable to provide large scale thermal haptic feedback. </p>
+        <p>When concurrently applying thermal and vibration feedback, human perception may be altered due to thermal referral, but there was no research done on the frequency’s contribution to the thermal referral phenomenon so we are unsure if the perception will be further affected by vibration frequency. </p>
+        <p>Our research aims to address the existing gaps in VR thermal feedback systems, specifically by targeting the facial area and exploring the interplay between thermal and vibrational stimuli to enhance immersion. How do we utilise this phenomenon, thermal referral, to provide on-face thermal sensation for immersive VR experience. </p>
+    </section>
+
+    <section id="hypothesising">
+        <h2>Hypothesising</h2>
+        <h3>Research Questions</h3>
+        <p>Looking at the research gaps, these 2 research questions have been identified. 
+        <ol>
+            <li>Thermal referral has been investigated on human back and arms, but it is unclear that if this phenomenal exists on human faces.</li>
+            <li>If thermal referral exists on faces, how do we make use of this to create immersive virtual reality experience.</li>
+        </ol></p>
+        <h3>Hypotheses</h3>
+        <p>Following the research questions, we hypothesised that:
+        <ol>
+            <li>Thermal referral exists on human faces, and it is related to the frequency of motor vibration.</li>
+            <li>And secondly, using thermal referral on fasce to create different localised thermal feedback can improve immersion in virtual reality experience.</li>
+        </ol></p>
     </section>
 
     <section id="research-methodologies">
         <h2>Research Methodologies</h2>
         <h3>Hardware Prototype</h3>
-        <p>To validate our hypothesis, we designed a prototype consisting of a head-mounted device with TECs and LRAs to provide thermal and tactile feedback. The system is controlled by an ESP32 to ensure the desired temperatures are achieved for specific VR scenarios. The thermocouple constantly measures the temperature around the TECs, and the ESP32 compares the actual temperature to the desired setpoint. Based on the temperature readings, the ESP32 sends PWM signals to the TEC drivers to control the TEC modules.</p>
+        <p>To validate our hypothesis, we designed a prototype to conduct experiments, it consists of the head mounted device with 2 TECs and 3 LRAs placed on it. They will be activated individually to suite our experiment needs. </p>
         <figure>
-            <img src="hardware-prototype.jpg" alt="Hardware Prototype">
-            <figcaption>Figure 8: Current hardware prototype for testing thermal referral on the face.</figcaption>
+            <img src="assets\HardwarePrototype.png" alt="Hardware Prototype">
+            <figcaption>Figure 8 Current hardware prototype</figcaption>
         </figure>
-        <h3>Temperature Control and Tactile Feedback</h3>
-        <p>For tactile feedback, the ESP32 triggers the LRA DC motor drivers based on VR scene events or other input conditions. These drivers then control the haptic motors, creating vibration patterns that enhance immersion. For example, if a VR event involves touching a cold or warm object, the haptic motors could vibrate while the TEC adjusts the temperature to match the sensation.</p>
+        <p>There are 4 pairs of thermal referral groups that our prototype may create, from our prediction. The thermal referral groups are indicated below by the red ovals. </p>
+        <figure>
+            <img src="assets\ThermalReferralGroups.png" alt="Thermal Referral Groups">
+            <figcaption>Figure 9 Predicted thermal referral group</figcaption>
+        </figure>
+        <p>When the prototype is powered on, the TECs will be adjusted to the desired temperature to provide thermal haptic feedback on face.</p>
+        <figure>
+            <img src="assets\ThermalCamera.png" alt="Thermal Camera">
+            <figcaption>Figure 10 Thermal camera image of working TECs</figcaption>
+        </figure>
+        <p>In the thermal camera image, we can see that the TEC on the left is relatively hot at 35.9 degrees while the one on the right is relatively cool at 28.1 degrees. </p>
+        <figure>
+            <img src="assets\Architecture.png" alt="Architecture">
+            <figcaption>Figure 11 Architecture of hardware prototype</figcaption>
+        </figure>
+        <p>In terms of temperature control, the thermocouple constantly measures the temperature around the TECs. This data is transmitted to the ESP32, which compares the actual temperature to the desired setpoint. Based on the temperature readings, the ESP32 sends PWM signals to the TEC drivers to control the TEC modules. If the temperature exceeds the set limit, the ESP32 increases the duty cycle of the PWM, making the TECs cool down the area. Conversely, if the area is too cold, the ESP32 reduces the duty cycle or turns off the TECs. For tactile feedback, the ESP32 triggers the LRA DC motor drivers based on VR scene events or other input conditions. These drivers then control the haptic motors, creating vibration patterns that enhance immersion. For example, if a VR event involves touching a cold or warm object, the haptic motors could vibrate while the TEC adjusts the temperature to match the sensation.</p>
+        <h4>Temperature Control and Tactile Feedback</h4>
+        <p>After some user testing review of the prototype, there are a few limitations identified. </p>
+        <p>The temperature of the TECs is not controlled accurately potentially due to several factors. The hardware limitations of TEC modules require extra cooling aids to remove excess heat emitted while the TECs are working. If the excess heat is not removed, it will result in excessively high temperatures in warm situations and extra delay during cool situations. Extra passive or even active cooling methods should be considered to improve the accuracy of TEC temperatures. </p>
+        <p>The connections for different components on the prototype, especially for the LRAs and TECs, are not stable. The wirings connecting them breaks very often which leads to broken circuit. The metallic outer shell of the LRA motor leads to potential short circuit, despite trying to insulate the shell with insulating tapes, there are still possible areas of exposure and caused the motor to stop working. These connection issues lead to frequent malfunctions of the prototype which should be solved. Adding additional coatings on the motor or another model of the motor may be considered, together with better design of circuit which holds the components stronger together. </p>
+        <h3>Experimental Design</h3>
+        <p>We are still in the process of optimising prototype and refining experiment design. Below are the two experiments that have designed. </p>
+        <h4>Experiment 1</h4>
+        <p>To validate hypothesis 1, we designed user experiment 1 to determine the presence of thermal referral on human faces, and whether its strength is related to the frequency of LRA vibration. </p>
+        <p>We will use the hardware prototype for participants to experience different combinations of vibration and thermal sensations, with the step-by-step instructions in the UI to guide them through the experiment while collecting data needed for the experiment.</p>
+        <p>To collect data from the participants, the self-created user interface (UI) will be used, it allows the participant to finish the whole experiment by themselves with clear instructions. The operations include rating the strength of thermal stimulus and subjectively drawing the location of thermal sensations for various scenarios. We will provide ample time for the skin to rest between different stimulations, as indicated by the cooldown timing in the UI. </p>
+        <p>The experiment is design with 40 scenarios in random, 80 rounds of stimulation, 2 repetitions per scenario to improve reliability and consistency of results. </p>
+        <p>The collected data from participants: 
+        <ul>
+            <li>Reaction time of participants</li>
+            <li>Strength of thermal sensation</li>
+            <li>Area and location of thermal sensation</li>
+            <li>Image of thermal sensation areas drawn</li>
+        </ul></p>
+        <p>We will have at least 12 participants for this experiment such that the data collected is enough for a pilot study (Julious, 2005). </p>
+        <h4>Experiment 2</h4>
+        <p>To validate hypothesis 2, we designed experiment 2, to develop a thermo-haptic device that can be mounted on VR headsets and to explore the effects of thermal referral on users’ facial regions to enhance the VR experience. </p>
+        <p>We will be mounting the prototype onto the Meta Quest 3 headset to incorporate the thermal haptic feedback into VR scenarios.</p>
+        <h3>Preliminary Survey</h3>
+        <p>I conducted preliminary survey on 16 respondents, who were asked to touch a thermoelectric cooler at different temperatures and select the lowest temperature that an obvious warm sensation can be felt, and vice versa.</p>
+        <figure>
+            <img src="assets\SurveyWarm.png" alt="SurveyWarm">
+            <img src="assets\SurveyCool.png" alt="SurveyCool">
+            <figcaption>Figure 12 Preliminary survey to determine respective temperature used for warm and cold situations in prototype</figcaption>
+        </figure>
+        <p>According to the survey results, I have concluded that at 38°C, an obvious warm sensation can be felt while with at 28°C, an obvious cool sensation can be felt. In addition, Chapter 3: Human Haptic Perception of Haptics Technologies mentioned, when the skin temperature is maintained at 30–36°C, no thermal sensation is noted. (Saddik et al., 2011). Thus 38°C and 28°C are just the right temperature to provide warm and cool sensations respectively. </p>
     </section>
 
-    <section id="limitations">
-        <h2>Limitations</h2>
-        <p>After some user testing review of the prototype, there are a few limitations identified. The temperature of the TECs is not controlled accurately, potentially due to several factors. The hardware limitations of TEC modules require extra cooling aids to remove excess heat emitted while the TECs are working. If the excess heat is not removed, it will result in excessively high temperatures in warm situations and extra delay during cool situations. Extra passive or even active cooling methods should be considered to improve the accuracy of TEC temperatures.</p>
-        <p>The connections for different components on the prototype, especially for the LRAs and TECs, are not stable. The wirings connecting them break very often, leading to broken circuits. The metallic outer shell of the LRA motor leads to potential short circuits, despite trying to insulate the shell with insulating tapes. These connection issues lead to frequent malfunctions of the prototype, which should be solved. Adding additional coatings on the motor or using another model of the motor may be considered, together with better circuit design that holds the components more securely.</p>
-    </section>
-
-    <section id="experimental-design">
-        <h2>Experimental Design</h2>
-        <h3>Experiment 1</h3>
-        <p>To validate hypothesis 1, we designed user experiment 1 to determine the presence of thermal referral on human faces, and whether its strength is related to the frequency of LRA vibration. We will use the hardware prototype for participants to experience different combinations of vibration and thermal sensations, with step-by-step instructions in the UI to guide them through the experiment while collecting data needed for the experiment.</p>
-        <p>To collect data from the participants, a self-created user interface (UI) will be used, allowing the participant to finish the whole experiment by themselves with clear instructions. The operations include rating the strength of thermal stimulus and subjectively drawing the location of thermal sensations for various scenarios. We will provide ample time for the skin to rest between different stimulations, as indicated by the cooldown timing in the UI.</p>
-        <h3>Experiment 2</h3>
-        <p>To validate hypothesis 2, we designed experiment 2, to develop a thermo-haptic device that can be mounted on VR headsets and to explore the effects of thermal referral on users’ facial regions to enhance the VR experience. We will be mounting the prototype onto the Meta Quest 3 headset to incorporate the thermal haptic feedback into VR scenarios.</p>
-    </section>
-
-    <section id="conclusion">
+    <section id="conclusion-and-future-work">
         <h2>Conclusion and Future Work</h2>
-        <p>We have identified a gap in current VR experiences: the lack of research on thermal referral and thermal haptic feedback on the face. Our research hypothesises that thermal referral exists on the human face and is influenced by vibration frequency, and that utilising this phenomenon can enhance VR immersion.</p>
-        <p>Our immediate focus is to refine the prototype by improving cooling mechanisms for the TECs and enhancing circuit stability to prevent malfunctions. Once optimised, we will proceed with experiment 1 to test the existence of thermal referral on the face and its relationship to vibration frequency, involving at least 12 participants. Subsequently, experiment 2 will integrate the refined prototype with a VR headset to evaluate how facial thermal feedback affects immersion in a virtual environment. This will help validate whether utilising thermal referral can improve the VR experience.</p>
+        <figure>
+            <img src="assets\Timeline1.png" alt="Timeline1">
+            <img src="assets\Timeline2.png" alt="Timeline2">
+            <figcaption>Figure 13 Predicted Project Timeline</figcaption>
+        </figure>
+        <p>We have identified a gap in current VR experiences: the lack of research on thermal referral and thermal haptic feedback on the face. Our research hypothesises that thermal referral exists on the human face and is influenced by vibration frequency, and that utilising this phenomenon can enhance VR immersion. </p>
+        <p>Our immediate focus is to refine the prototype by improving cooling mechanisms for the TECs and enhancing circuit stability to prevent malfunctions. Once optimised, we will proceed with experiment 1 to test the existence of thermal referral on the face and its relationship to vibration frequency, involving at least 12 participants. Subsequently, experiment 2 will integrate the refined prototype with a VR headset to evaluate how facial thermal feedback affects immersion in a virtual environment. This will help validate whether utilising thermal referral can improve the VR experience. </p>
         <p>Ultimately, we hope to contribute to the development of more immersive VR technology by incorporating comprehensive thermal haptic feedback, addressing a significant deficiency in current VR systems.</p>
     </section>
+    <div id="references" class="references">
+        <sl-divider></sl-divider>
+        <h2>References</h2>
+        <ul>
+            <li>
+                Abdallah, E. A., Xingyu, Y., Swamy, A., Thomas, R., Jack, J., Jess, H.-O., . . . Pablo, C. (2020). Thermalwear: Exploring wearable on-chest thermal displays to augment voice messages with affect. Proceedings of the 2020 CHI Conference on Human Factors in Computing systems, 1-14.
+            </li>
+            <li>
+                Antonio Cataldo, E. R. (24 10, 2016). Thermal referral: evidence for a thermoceptive uniformity illusion without touch. Scientific Reports. https://doi.org/10.1038/srep35286
+            </li>
+            <li>
+                Bettina, E., Jeff-Owens, I., Sebastian, G., Jasmin, N., & Florian, M. (2023). ThermoFeet: Assessing On-Foot Thermal Stimuli for Directional Cues. Proceedings of the 22nd International Conference on Mobile and Ubiquitous Multimedia, 166-171.
+            </li>
+            <li>
+                Cai, S., Ke, P., Narumi, T., & Zhu, K. (2020). ThermAirGlove: A Pneumatic Glove for Thermal Perception and Material Identification in Virtual Reality. 2020 IEEE Conference on Virtual Reality and 3D User Interfaces (VR). https://doi.org/10.1109/vr46266.2020.00044
+            </li>
+            <li>
+                Eric, W., Hrvoje, B., Christian, H., Eyal, O., & Mike, S. (2018). Haptic revolver: Touch, shear, texture, and shape rendering on a reconfigurable virtual reality controller. Proceedings of the 2018 CHI conference on human factors in computing systems, 1-12.
+            </li>
+            <li>
+                Galambos, P. P. (2012). Vibrotactile feedback for haptics and telemanipulation: Survey, concept and experimen. Acta Polytechnica Hungarica, 9(1), 41-65.
+            </li>
+            <li>
+                Heaney, D. (19 1, 2024). Apple Vision Pro Full Specs, Features & Details. Retrieved from uploadvr.com: https://www.uploadvr.com/apple-vision-pro-specs/
+            </li>
+            <li>
+                Huang, Y., Zhou, J., Ke, P., Guo, X., Yiu, C. K., Yao, K., . . . Gao, Y. (2023). A skin-integrated multimodal haptic interface for immersive tactile feedback. Nature Electronics, 1041. https://doi.org/10.1038/s41928-023-01115-7
+            </li>
+            <li>
+                Inrak, C., Heather, C., R, M. M., Alex, O., & Sean, F. (2017). Grabity: A wearable haptic interface for simulating weight and grasping in virtual reality. Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology, 119-130.
+            </li>
+            <li>
+                Julious, S. A. (2005). Sample size of 12 per group rule of thumb for a pilot study. Pharmaceutical Statistics, 4(4), 287-291. https://doi.org/10.1002/pst.185
+            </li>
+            <li>
+                Kening, Z., Simon, P., Taizhou, C., Shaoyu, C., & Lalintha, P. R. (2019). A sense of ice and fire: Exploring thermal feedback with multiple thermoelectric-cooling elements on a smart ring. International Journal of Human-Computer Studies, 130, 234-247.
+            </li>
+            <li>
+                Lalitha, P. R., Yuan-Ling, F., Liwei, C., & Kouta, M. (2019). Thermalbracelet: Exploring thermal haptic feedback around the wrist. Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems, 1-11.
+            </li>
+            <li>
+                Liu, Y., Nishikawa, S., Seong, Y. a., Niiyama, R., & Kuniyoshi, Y. (2021). ThermoCaress: A Wearable Haptic Device with Illusory Moving . CHI ’21, 1-12. https://doi.org/10.1145/3411764.3445777
+            </li>
+            <li>
+                Mourad, B., Grigore, B., George, P., & Rares, B. (2002). The Rutgers Master II-new design force-feedback glove. IEEE/ASME Transactions on mechatronics, 7(2), 256-263.
+            </li>
+            <li>
+                Nimesha, R., Pravar, J., Nguyen, T. N., Raymond, K. K., David, T., Shienny, K., . . . Chow, E. W. (2018). Season traveller: Multisensory narration for enhancing the virtual reality experience. Proceedings of the 2018 CHI conference on human factors in computing systems, 1-13.
+            </li>
+            <li>
+                Peiris, R. L., Peng, W., Chen, Z., Chan, L., & Minamizawa, K. (02 05, 2017). ThermoVR: Exploring Integrated Thermal Haptic Feedback. CHI '17: Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, pp. 5452-5456. https://doi.org/10.1145/3025453.3025824
+            </li>
+            <li>
+                Saddik, A. E., Orozco, M., Eid, M., & Cha, J. (2011). Human Haptic Perception. In A. E. Saddik, M. Orozco, M. Eid, & J. Cha, Haptics Technologies (pp. 45-66).
+            </li>
+            <li>
+                Shaoyu, C., Zhenlin, C., Haichen, G., Ya, H., Qi, Z., Xinge, Y., & Kening, Z. (2024). ViboPneumo: A Vibratory-Pneumatic Finger-Worn Haptic Device for Altering Perceived Texture Roughness in Mixed Reality. IEEE Transactions on Visualization and Computer Graphics.
+            </li>
+            <li>
+                Shuhei, A., Shogo, O., & Yoji, Y. (2014). Vibrotactile stimulation to increase and decrease texture roughness. IEEE Transactions on Human-Machine Systems, 45(3), 393-398.
+            </li>
+            <li>
+                Son, H., Wang, H., Singhal, Y., & Kim, J. R. (5, 2023). Upper Body Thermal Referral and Tactile Masking for Localized Feedback. IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS(29), pp. 2211-2219. https://doi.org/10.1109/tvcg.2023.3247068
+            </li>
+            <li>
+                Tong, J., Li, L., Bruns, P., & Röder, B. (2020). Crossmodal associations modulate multisensory spatial integration. Attention, Perception, & Psychophysics, 82(7), 3490-3506. https://doi.org/10.3758/s13414-020-02083-2
+            </li>
+            <li>
+                Wang, H., Singhal, Y., Gil, H., & Kim, J. R. (2024). Thermal Masking: When the Illusion Takes Over the Real. CHI '24, 1-16. https://doi.org/10.1145/3613904.3641941
+            </li>
+        </ul>
+    </div>
 
     <footer>
-        <p>&copy; 2024 ThermoMask Research. All rights reserved.</p>
+        <p>&copy; 2024 ThermoMask</p>
     </footer>
 </body>
 </html>
