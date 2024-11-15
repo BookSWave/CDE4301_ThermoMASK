@@ -126,34 +126,6 @@ footer {
     margin: 2rem 0;
 }
 
-@page {
-    size: A6;
-
-    @footnote {
-        /* The Background color highlights the footnote area */
-        background-color: #feb2b2;
-        /* The Border Top is the footnote rule */
-        border-top: 5px solid #38a169;
-    }
-}
-
-/* This element is for a single footnote body */
-.footnote { 
-    float: footnote;
-    background-color: #a3bffa; 
-    margin-bottom: 2mm;
-}
-
-/* As the name says this is the footnote call */
-.footnote::footnote-call { 
-    background-color: #d6bcfa;
-}
-
-/* And the footnote marker */
-.footnote::footnote-marker { 
-    background-color: #fbb6ce;
-}
-
 ul li {
     list-style-type: disc;
 }
