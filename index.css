@@ -133,3 +133,16 @@ ul li {
 ol li {
     list-style-type: decimal;
 }
+
+sup a {
+    text-decoration: none;
+}
+#footnotes {
+    font-size: 0.8em;
+}
+#footnotes ol {
+    list-style-type: decimal;
+}
+#footnotes a {
+    text-decoration: none;
+}
