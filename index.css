@@ -71,6 +71,14 @@ figure img {
     height: auto;
     border-radius: 5px;
     border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto;
+}
+
+figure.two-images-inline img {
+    max-width: 45%;
+    display: inline-block;
+    margin: 0 1%;
 }
 
 figcaption {
