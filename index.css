@@ -126,7 +126,7 @@ footer {
     margin: 2rem 0;
 }
 
-/* @page {
+@page {
     size: A6;
 
     @footnote {
@@ -135,7 +135,7 @@ footer {
         /* The Border Top is the footnote rule */
         border-top: 5px solid #38a169;
     }
-} */
+}
 
 /* This element is for a single footnote body */
 .footnote { 
