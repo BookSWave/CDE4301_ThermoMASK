@@ -132,7 +132,7 @@
         </figure>
         <p>In the thermal camera image, we can see that the TEC on the left is relatively hot at 35.9 degrees while the one on the right is relatively cool at 28.1 degrees. </p>
         <figure>
-            <img src="assets\Architecture.png" alt="Architecture">
+            <img src="assets\Architecture.jpg" alt="Architecture">
             <figcaption>Figure 11 Architecture of hardware prototype</figcaption>
         </figure>
         <p>In terms of temperature control, the thermocouple constantly measures the temperature around the TECs. This data is transmitted to the ESP32, which compares the actual temperature to the desired setpoint. Based on the temperature readings, the ESP32 sends PWM signals to the TEC drivers to control the TEC modules. If the temperature exceeds the set limit, the ESP32 increases the duty cycle of the PWM, making the TECs cool down the area. Conversely, if the area is too cold, the ESP32 reduces the duty cycle or turns off the TECs. For tactile feedback, the ESP32 triggers the LRA DC motor drivers based on VR scene events or other input conditions. These drivers then control the haptic motors, creating vibration patterns that enhance immersion. For example, if a VR event involves touching a cold or warm object, the haptic motors could vibrate while the TEC adjusts the temperature to match the sensation.</p>
